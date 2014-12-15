@@ -43,7 +43,7 @@ def postingalink(num_str):
         body = content_recursion(num_str)
     except RuntimeError:
         title = "O, no!"
-        body = "Now, that <em>is</em> a bit too many!!"
+        body = "Now, that *is* a bit too many!!"
     return render_template("template.html", title=title, body=body)
 
 if __name__ == "__main__":
