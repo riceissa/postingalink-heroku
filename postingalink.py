@@ -35,11 +35,12 @@ def content_recursion(num_str):
     except ValueError:
         return base_content
 
-#@app.route('/')
-#def index():
-    #""" Displays the index page accessible at '/'
-    #"""
-    #return render_template('template.html')
+@app.route('/')
+def index():
+    """
+    Displays the index page accessible at '/'
+    """
+    return "Hello"
 
 @app.route("/<num_str>/")
 def postingalink(num_str):
