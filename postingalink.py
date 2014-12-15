@@ -1,7 +1,5 @@
-
-
+#!/bin/python
 # This program is public domain.
-
 
 import os
 from flask import Flask, render_template
@@ -40,7 +38,9 @@ def index():
     """
     Displays the index page accessible at '/'
     """
-    return "Hello"
+    title = "Hello, world"
+    body = "Visit the directories '/0', '/1', '/2', and so on."
+    return render_template("template.html", title=title, body=body)
 
 @app.route("/<num_str>/")
 def postingalink(num_str):
